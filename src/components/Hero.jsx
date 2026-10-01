@@ -355,7 +355,7 @@ const Hero = () => {
             className="flex flex-wrap items-center gap-4 pt-3"
           >
             <motion.a
-              href="/assets/resume.pdf"
+               href={`${import.meta.env.BASE_URL}assets/resume.pdf`}
               download
               whileHover={{ y: -2, boxShadow: '0 10px 40px rgba(34,211,238,0.4)' }}
               whileTap={{ scale: 0.98 }}
@@ -427,7 +427,7 @@ const Hero = () => {
               className="relative h-[380px] w-72 overflow-hidden rounded-3xl border border-cyan-500/30 shadow-[0_0_50px_rgba(34,211,238,0.15)] md:h-[420px] md:w-80"
             >
               <img
-                src="/assets/profile.jpeg"
+                src={`${import.meta.env.BASE_URL}/assets/profile.jpeg`}
                 alt="Mrunali Patil"
                 className="h-full w-full object-cover"
               />
